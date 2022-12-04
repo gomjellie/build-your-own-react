@@ -4,8 +4,8 @@ type HTML_TYPES = keyof ReactHTML;
 
 function createElement(
   type: HTML_TYPES,
-  props: any[],
-  ...children: any[]
+  props: Record<string, any>,
+  ...children: JSX.Element[]
 ): JSX.Element {
   return {
     type,
@@ -110,7 +110,7 @@ function createDom(fiber: Fiber): Text | HTMLElement {
     fiber.type === 'TEXT_ELEMENT'
       ? document.createTextNode('')
       : document.createElement(fiber.type);
-  const isProperty = (key: any) => key !== 'children';
+  const isProperty = (key: string) => key !== 'children';
   Object.keys(fiber.props)
     .filter(isProperty)
     .forEach((name) => {
