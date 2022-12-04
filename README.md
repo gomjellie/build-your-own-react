@@ -5,7 +5,7 @@ Fully Typed Little React
 
 JSX 표현식을 아래처럼 `@jsx` 주석으로 PRAGMA 설정을 해줘서 JSX파서가 `Didact.createElement`를 실행하도록 설정했습니다.
 
-```ts
+```tsx
 /**
  * @jsxRuntime classic
  * @jsx Didact.createElement
