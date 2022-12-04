@@ -1,7 +1,4 @@
-import React from 'react';
 import type { ReactHTML } from 'react';
-
-React.createElement;
 
 type HTML_TYPES = keyof ReactHTML;
 
