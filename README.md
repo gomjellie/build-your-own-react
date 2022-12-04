@@ -21,3 +21,4 @@ const element = (
 );
 ```
 
+[main.tsx](/src/main.tsx)에 모든 구현이 있습니다
